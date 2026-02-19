@@ -90,13 +90,11 @@ cpulimit -l 95 -- qemu-system-x86_64 \
 -rtc base=localtime,clock=host
 ```
 
-## Lubuntu VM Disk Image
+## Lubuntu VM Iso
 
-The VM disk image (`lubuntu.qcow2`) is **not included** in this repository due to its large size (~13.86 GB). The ("Lunbuntu.iso") is **not included** in this repository due to its large size (~3.46 GB).
+The ("Lunbuntu.iso") is **not included** in this repository due to its large size (~3.46 GB).
 
 ## To use the launch script:
-
-## Lubuntu ISO / QCOW2 Image
 
 To run the VM, you need a Lubuntu disk image.
 
@@ -106,6 +104,12 @@ To run the VM, you need a Lubuntu disk image.
 ![Terminal Screenshot](screenshots/LubuntuDownloadScreen.png)
 
 2. Must, convert it to a QCOW2 image for use with QEMU.
+
+## Run the following command to create a QCOW2 image (example: 20 GB):
+
+```bash
+qemu-img create -f qcow2 lubuntu.qcow2 20G
+```
 
 ## 🖥 QEMU Requirement
 
@@ -118,16 +122,20 @@ This project uses QEMU for running the Lubuntu VM. You need to install it on you
 sudo apt update
 sudo apt install qemu qemu-kvm qemu-utils
 ```
-   
 
-## Run the following command to create a QCOW2 image (example: 20 GB):
-
-```bash
-qemu-img create -f qcow2 lubuntu.qcow2 20G
-```
 3. Open a terminal and navigate to the folder containing the ISO.
 
+### 2️⃣ Navigate to your project folder
+Assuming the user downloaded your repo to `Downloads/VMProject`:
+
+```bash
+cd ~/Downloads/VMProject
+ls
+```
+
+
 4.Place the QCOW2 file in the **same folder as `launch.sh`**.
+
 5. Run the launch script as described in the README.
 
 ![Terminal Screenshot](screenshots/terminal.jpg)
