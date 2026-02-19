@@ -88,5 +88,6 @@ cpulimit -l 95 -- qemu-system-x86_64 \
 -rtc base=localtime,clock=host
 
 ## 📷 Screenshots
-![Terminal Screenshot](screenshots/terminal.jpg)
+[Terminal Screenshot](screenshots/terminal.jpg)   <-- clickable link only
+
 
