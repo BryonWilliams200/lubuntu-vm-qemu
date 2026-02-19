@@ -69,7 +69,9 @@ The virtual machine was configured manually using QEMU parameters:
 
 ## 🚀 Launch Script
 
-To eliminate repetitive manual commands, the VM was encapsulated into an executable Bash script:
+🚀 Launch Script
+
+To eliminate repetitive manual commands, the VM is encapsulated into an executable Bash script.
 
 ```bash
 cpulimit -l 95 -- qemu-system-x86_64 \
@@ -86,9 +88,31 @@ cpulimit -l 95 -- qemu-system-x86_64 \
 -no-reboot \
 -no-shutdown \
 -rtc base=localtime,clock=host
+```
 
-## 📷 Screenshots
-![Terminal Screenshot](screenshots/terminal.jpg)
+## Lubuntu VM Disk Image
+
+The VM disk image (`lubuntu.qcow2`) is **not included** in this repository due to its large size (~13.86 GB). The ("Lunbuntu.iso") is **not included** in this repository due to its large size (~3.46 GB).
+
+## To use the launch script:
+
+## Lubuntu ISO / QCOW2 Image
+
+To run the VM, you need a Lubuntu disk image.
+
+1. Download the official Lubuntu ISO from the website:  
+   [Lubuntu ISO Downloads](https://lubuntu.me/downloads/)
+2. Must, convert it to a QCOW2 image for use with QEMU.
+
+
+
+
+1. Obtain a Lubuntu QCOW2 image:
+   -Create your own from a Lubuntu ISO using QEMU.
+2. Place the QCOW2 file in the **same folder as `launch.sh`**.
+3. Run the launch script as described in the README.
+
+> ⚠️ Note: Screenshots and the script are included to demonstrate setup, but you must supply the VM image locally.
 
 
 
