@@ -104,7 +104,7 @@ To run the VM, you need a Lubuntu disk image.
    [Lubuntu ISO Downloads](https://lubuntu.me/downloads/)
 2. Must, convert it to a QCOW2 image for use with QEMU.
 
-
+![Terminal Screenshot](screenshots/LubuntuDownloadScreen.png)
 
 
 1. Obtain a Lubuntu QCOW2 image:
