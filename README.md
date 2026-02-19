@@ -102,17 +102,34 @@ To run the VM, you need a Lubuntu disk image.
 
 1. Download the official Lubuntu ISO from the website:  
    [Lubuntu ISO Downloads](https://lubuntu.me/downloads/)
-2. Must, convert it to a QCOW2 image for use with QEMU.
 
 ![Terminal Screenshot](screenshots/LubuntuDownloadScreen.png)
 
+2. Must, convert it to a QCOW2 image for use with QEMU.
 
-1. Obtain a Lubuntu QCOW2 image:
-   -Create your own from a Lubuntu ISO using QEMU.
-2. Place the QCOW2 file in the **same folder as `launch.sh`**.
-3. Run the launch script as described in the README.
+## 🖥 QEMU Requirement
 
-> ⚠️ Note: Screenshots and the script are included to demonstrate setup, but you must supply the VM image locally.
+This project uses QEMU for running the Lubuntu VM. You need to install it on your system before using the launch script.
 
+### Installation
+
+**Linux (Debian/Ubuntu):**
+```bash
+sudo apt update
+sudo apt install qemu qemu-kvm qemu-utils
+```
+   
+
+## Run the following command to create a QCOW2 image (example: 20 GB):
+
+```bash
+qemu-img create -f qcow2 lubuntu.qcow2 20G
+```
+3. Open a terminal and navigate to the folder containing the ISO.
+
+4.Place the QCOW2 file in the **same folder as `launch.sh`**.
+5. Run the launch script as described in the README.
+
+![Terminal Screenshot](screenshots/LubuntuDownloadScreen.png)
 
 
