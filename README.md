@@ -130,6 +130,14 @@ qemu-img create -f qcow2 lubuntu.qcow2 20G
 4.Place the QCOW2 file in the **same folder as `launch.sh`**.
 5. Run the launch script as described in the README.
 
-![Terminal Screenshot](screenshots/LubuntuDownloadScreen.png)
+![Terminal Screenshot](screenshots/terminal.jpg)
 
+
+![Terminal Screenshot](screenshots/Lubuntu.png)
+
+![Terminal Screenshot](screenshots/bootdisk.png)
+
+![Terminal Screenshot](screenshots/boot.png)
+
+![Terminal Screenshot](screenshots/background.png)
 
